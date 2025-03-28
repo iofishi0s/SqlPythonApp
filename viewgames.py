@@ -1,7 +1,7 @@
 from sindesi1 import get_connection
 
 def view_games():
-    connection = get_connection
+    connection = get_connection()
     cursor = connection.cursor()
     sql="SELECT * FROM games"
     cursor.execute(sql)
